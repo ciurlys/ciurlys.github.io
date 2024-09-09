@@ -9,14 +9,89 @@
 <body>
 
         <div class="image-container">
-            <div class="logo-box"><img src="odin-lined.png" alt="A simple picture of a crown" class="logo-image">Tränen des Königs</div>
+            <div class="logo-box"><img src="odin-lined.png" alt="A simple png of Odin" class="logo-image">Tränen des Königs</div>
         </div>
 
 
 
-        <div class="text-container"></div>
+        <div class="text-container">
+                <div class="header-text">Who follows me and the river will win untold riches.</div>
+                <div class="main-form-text">
+                    <fieldset>
+                        <legend>You have delayed long enough, embark:</legend>
+
+                        <form id="form" class="form-container">
+
+                            <div class="first-container">
+                                <div class="fname-box">
+                                    <label for="first-name">First name</label>
+                                    <input type="text" id="first-name" name="first-name">
+                                    
+                                </div>
+                                <div class="country-box">
+                                    <label for="country-of-origin">Land of your fathers</label>
+                                    <input type="text" id="country-of-origin" name="country-of-origin" list="recommendations-country">
+                                    <datalist id="recommendations-country">
+                                        <option>Vedic India</option>
+                                        <option>Palemonas' Lithuania</option>
+                                        <option>Romulus' Rome</option>
+                                        <option>Minoan Crete</option>
+                                    </datalist>
+                                </div>
+                            </div>
+
+                            <div class="second-container">
+                                <div class="goal-box">
+                                    <label for="goal">Greatest achievements</label>
+                                    <input type="text" id="goal" name="goal" list="recommendations-goal">
+                                    <datalist id="recommendations-goal">
+                                        <option>Fame</option>
+                                        <option>Riches</option>
+                                        <option>Power</option>
+                                        <option>Knowledge</option>
+                                    </datalist>
+                                </div>
+                                <div class="ready-box">
+                                    <label for="ready">Are you ready?</label>
+                                    <input type="text" id="ready" name="ready" placeholder="I am ready">
+                    
+                                </div>
+                            </div>
 
 
-    
+                            <div class="third-container">
+                                <div class="password-box">
+                                    <label for="password">*Enter password</label>
+                                    <input type="password" id="password" name="password">
+                                    <div class="hidden-text-password"></div>
+                                </div>
+                                <div class="password-repeat-box">
+                                    <label for="passwordRepeat">*Confirm password</label>
+                                    <input type="password" id="passwordRepeat" name="passwordRepeat">
+                                    <div class="hidden-text-passwordRepeat"></div>
+                                </div>
+                            </div>
+                            <div class="button-and-text-box">
+                                <button type="submit">Embark me, o Lord, on Your wrath</button>
+                                <div class="text-below-button">Already on ship? <a href="https://youtu.be/qnYwYD8Xh88?t=2325" target="_blank">Wir halten durch.</a></div>
+                            </div>
+                        </form>
+
+                    </fieldset>
+                </div>
+                <div class="footer-text">
+
+                     
+                           
+                       
+
+                </div>
+
+
+
+        </div>
+
+
+    <script src="code.js"></script>
 </body>
 </html>

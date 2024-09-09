@@ -8,6 +8,14 @@
 
 }
 
+@font-face {
+    font-family: 'peddanaregular';
+    src: url('font2/peddana-regular-webfont.woff2') format('woff2'),
+         url('font2/peddana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 :root{
     --image-container-width: 40%;
@@ -50,4 +58,115 @@ body{
 .text-container{
     width: var(--text-container-width); 
     background-color: #587e3f;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text{
+font-family:'peddanaregular';
+font-size: 6rem;
+line-height: 7rem;
+text-align: center;
+text-shadow: #2c3f1f 20px 0 10px;
+}
+.main-form-text{
+    border-top:1px solid #3a5329;
+    border-bottom: 1px solid #3a5329;
+    background-color: #4d6e36;
+    height: 50vh;
+    box-shadow: 2px 2px 5px #2c3f1f;
+}
+fieldset{
+    border:none;
+}
+legend{
+    font-size: 2.6rem;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+.form-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:4rem;
+}
+
+.fname-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.country-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.goal-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.ready-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.password-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.password-repeat-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: left;
+}
+input{
+    min-height: 30px;
+    min-width: 350px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.first-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.second-container{
+    display:flex;
+    justify-content: space-evenly;
+}
+.third-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-and-text-box{
+    padding:60px;
+    text-align: center;
+    font-size: 1rem;
+}
+.text-below-button{
+    font-size: 20px;
+}
+button{
+    padding:12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #802a1d;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 3px 3px 9px #802a1d;
+}
+label{
+    margin-bottom: 8px;
+}
+
+input:focus{
+    border: 3px solid rgb(83, 235, 12);
 }
