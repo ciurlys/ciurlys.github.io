@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'jacques_francois_shadowRg';
+    src: url('font/jacquesfrancoisshadow-regular-webfont.woff2') format('woff2'),
+         url('font/jacquesfrancoisshadow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+:root{
+    --image-container-width: 40%;
+    --text-container-width: calc(100% - var(--image-container-width));
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    height: 100vh;
+
+}
+.image-container{
+    width: var(--image-container-width);
+    background-image: url('aguirre.jpg');
+    background-size: cover;
+}
+.logo-box{
+    background-color: black;
+    width: 100%;
+    height: 15%;
+    margin-top: 10%;
+    opacity: 0.5;
+    font-size: 4rem;
+    color:white;
+    font-family: 'jacques_francois_shadowRg';
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo-image{
+    width: auto;
+    height: auto;
+    max-width: 20%;
+    max-height: 80%;
+}
+.text-container{
+    width: var(--text-container-width); 
+    background-color: #587e3f;
+}
